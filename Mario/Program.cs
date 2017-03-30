@@ -23,21 +23,22 @@ namespace Mario
             while (pyramidHeight >= 23);
 
             // print the pyramid
-            
-            
 
-            for (int i = 0; i < pyramidHeight + 1; i++)
+
+            
+            for (int i = 1; i < pyramidHeight; i++)
             {
-                for (int j = 0; j < i; j++)
-                    Console.Write("*");
+                for (int j = 1; j < (pyramidHeight - i); j++)
+                    Console.Write(" ");
                         
-                for (int k = 0; k < i; k++)
-                       Console.Write(" ");
-                    Console.Write("\n");
+                for (int k = 1; k < i; k++)
+                    Console.Write("*");
+                
+                
 
                 
-                
-                
+    
+                    Console.Write("\n");
             }
             Console.ReadLine();
                 
